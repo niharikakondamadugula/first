@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Great+Vibes:wght@400&display=swap');
+
+.card-gradient {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 25%, #ff9a9e 50%, #fecfef 75%, #ffecd2 100%);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.diya-flame {
+    animation: flicker 2s ease-in-out infinite alternate;
+}
+
+@keyframes flicker {
+    0% { transform: scale(1) rotate(-1deg); opacity: 0.9; }
+    100% { transform: scale(1.1) rotate(1deg); opacity: 1; }
+}
+
+.rakhi-rotate {
+    animation: gentle-rotate 4s ease-in-out infinite;
+}
+
+@keyframes gentle-rotate {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(5deg); }
+}
+
+.flower-sway {
+    animation: sway 4s ease-in-out infinite;
+}
+
+@keyframes sway {
+    0%, 100% { transform: translateY(0px) rotate(0deg) scale(1); }
+    25% { transform: translateY(-3px) rotate(1deg) scale(1.05); }
+    50% { transform: translateY(-8px) rotate(3deg) scale(1.1); }
+    75% { transform: translateY(-3px) rotate(-1deg) scale(1.05); }
+}
+
+.pulse-glow {
+    animation: pulse-glow 3s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+    0%, 100% { 
+        transform: scale(1);
+        filter: drop-shadow(0 0 5px rgba(220, 38, 38, 0.3));
+    }
+    50% { 
+        transform: scale(1.05);
+        filter: drop-shadow(0 0 15px rgba(220, 38, 38, 0.6));
+    }
+}
+
+.float-up {
+    animation: float-up 6s ease-in-out infinite;
+}
+
+@keyframes float-up {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    33% { transform: translateY(-10px) rotate(2deg); }
+    66% { transform: translateY(-5px) rotate(-1deg); }
+}
+
+.photo-placeholder {
+    background: linear-gradient(45deg, #f3f4f6, #e5e7eb);
+    border: 3px dashed #d1d5db;
+}
+
+.message-area {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.decorative-border {
+    background: linear-gradient(90deg, transparent, #f97316, #ec4899, #dc2626, #f97316, transparent);
+    height: 2px;
+    animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 1; }
+}
+
+.bg-pattern {
+    background-image: 
+        radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.03) 0%, transparent 50%);
+}
+
+.floating-hearts {
+    animation: float-hearts 8s ease-in-out infinite;
+}
+
+@keyframes float-hearts {
+    0% { 
+        transform: translateY(100vh) translateX(0px) rotate(0deg) scale(0.8);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% { 
+        transform: translateY(-100px) translateX(50px) rotate(360deg) scale(1.2);
+        opacity: 0;
+    }
+}
+
+.heart-flow-1 {
+    animation: heart-flow-1 12s ease-in-out infinite;
+}
+
+@keyframes heart-flow-1 {
+    0% { 
+        transform: translateY(100vh) translateX(-20px) rotate(0deg) scale(0.6);
+        opacity: 0;
+    }
+    15% { opacity: 1; }
+    85% { opacity: 1; }
+    100% { 
+        transform: translateY(-50px) translateX(80px) rotate(180deg) scale(1.4);
+        opacity: 0;
+    }
+}
+
+.heart-flow-2 {
+    animation: heart-flow-2 10s ease-in-out infinite;
+}
+
+@keyframes heart-flow-2 {
+    0% { 
+        transform: translateY(100vh) translateX(30px) rotate(0deg) scale(0.9);
+        opacity: 0;
+    }
+    12% { opacity: 1; }
+    88% { opacity: 1; }
+    100% { 
+        transform: translateY(-80px) translateX(-40px) rotate(-180deg) scale(1.1);
+        opacity: 0;
+    }
+}
+
+.heart-flow-3 {
+    animation: heart-flow-3 14s ease-in-out infinite;
+}
+
+@keyframes heart-flow-3 {
+    0% { 
+        transform: translateY(100vh) translateX(-40px) rotate(0deg) scale(0.7);
+        opacity: 0;
+    }
+    18% { opacity: 1; }
+    82% { opacity: 1; }
+    100% { 
+        transform: translateY(-60px) translateX(100px) rotate(270deg) scale(1.3);
+        opacity: 0;
+    }
+}
